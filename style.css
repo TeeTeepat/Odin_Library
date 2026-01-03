@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto";
+}
+
+body {
+    background-color: #01102c;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    gap : 2vh;
+    position: relative;
+}
+
+.container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2vh;
+    gap: 1vh;
+    color: white;
+}
+
+.hook {
+    display: flex;
+}
+
+.hook {
+    font-size: clamp(24px, 4vw, 104px);
+}
+
+.hook span {
+    font-size: clamp(24px, 4vw, 104px);;
+}
+
+.newBook {
+    background-color: #29d35f;
+    padding: clamp(8px, 2vw, 20px) clamp(15px, 4vw, 40px);
+    border: none;
+    border-radius: 5%;
+    font-weight: 700;
+    box-shadow: 1px 2px 4px 0px black;
+    color: rgb(8, 41, 8);
+}
+
+.container-bottom {
+    width: 90vw;
+    flex :1;
+    box-sizing: border-box;
+    padding: clamp(20px , 4vw , 52px);
+    border: 2px solid black;
+    border-radius: clamp(20px , 3vw , 30px);
+    background-color: #fff9c5;
+    display: grid;
+    grid-template : repeat(auto-fill, minmax(100px, 1fr)) / repeat(auto-fill, minmax(300px, 1fr)) ;
+
+    gap: clamp(5px , 1vw, 20px);
+}
+
+.text-info {
+    font-weight: 600;
+}
+
+.card {
+    border-radius: clamp(5px , 2vw , 20px);
+    display: flex;
+    align-items: center;
+    background-color: #fffeef;
+    box-shadow: 2px 2px 4px 0px black;
+    position: relative;
+}
+
+.delete-card {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+}
+
+#notReadBook{
+    font-size: clamp(24px , 10vw , 104px);
+}
+
+#ReadBook {
+    font-size: clamp(24px , 10vw , 104px);
+    display: none;
+}
+
+.author {
+    display: flex;
+    gap: 0.5rem
+}
+
+.title {
+    display: flex;
+    gap: 0.5rem
+}
+
+.page {
+    display: flex;
+    gap: 0.5rem
+}
+
+.new-book-container {
+    position: absolute;
+    width: clamp(300px , 25vw , 500px);
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: clamp(20px , 2vw , 35px);
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: #fffab1;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    display: none;
+    flex-direction: column;
+} 
+
+.close-input {
+    text-align: right;
+    margin: 10px;
+    font-size: clamp(12px , 1vw , 24px);
+    color: red;
+}
+
+.new-book-container form {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.new-book-container form .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(16px, 2vw, 24px);
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    padding: clamp(20px, 2vw , 36px);
+}
+
+.new-book-container form .card-preview {
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-book-container form .card-preview span {
+    font-size: clamp(24px , 10vw, 256px);
+    color: rgb(137, 137, 137);
+}
+
+.content *:not(button) {
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    color: rgb(196, 196, 196);
+}
+
+.content input {
+    border-radius: clamp(5px , 1vw, 10px);
+    border: 1px solid gray;
+    height: clamp(10px, 5vh , 30px);
+    
+}
+
+.content button {
+    border: none;
+    border-radius: clamp(5px, 1vw, 10px);
+    height: clamp(20px , 5vh, 30px);
+    background-color: #61d832;
+    box-shadow: 1px 2px 5px 0px;
+}
+
